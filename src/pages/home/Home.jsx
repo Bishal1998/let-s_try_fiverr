@@ -5,6 +5,7 @@ import Trusted from '../../components/trusted/Trusted'
 import './Home.scss'
 import { cards } from '../../data'
 import CatCard from '../../components/catCard/CatCard'
+import Features from '../../components/features/Features'
 
 const Home = () => {
     return (
@@ -18,6 +19,7 @@ const Home = () => {
                     ))
                 }
             </Slide>
+            <Features />
         </div>
     )
 }
