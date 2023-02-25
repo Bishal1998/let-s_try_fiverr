@@ -6,6 +6,7 @@ import './Home.scss'
 import { cards } from '../../data'
 import CatCard from '../../components/catCard/CatCard'
 import Features from '../../components/features/Features'
+import Business from '../../components/business/Business'
 
 const Home = () => {
     return (
@@ -20,6 +21,7 @@ const Home = () => {
                 }
             </Slide>
             <Features />
+            <Business />
         </div>
     )
 }
