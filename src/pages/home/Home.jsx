@@ -3,10 +3,11 @@ import Featured from '../../components/featured/Featured'
 import Slide from '../../components/slide/Slide'
 import Trusted from '../../components/trusted/Trusted'
 import './Home.scss'
-import { cards } from '../../data'
+import { cards, projects } from '../../data'
 import CatCard from '../../components/catCard/CatCard'
 import Features from '../../components/features/Features'
 import Business from '../../components/business/Business'
+import ProjectCard from '../../components/projectCard/ProjectCard'
 
 const Home = () => {
     return (
@@ -22,6 +23,13 @@ const Home = () => {
             </Slide>
             <Features />
             <Business />
+            <Slide slidesToShow={4} arrowsScroll={5}>
+                {
+                    projects.map(card => (
+                        <ProjectCard item={card} key={card.id} />
+                    ))
+                }
+            </Slide>
         </div>
     )
 }
